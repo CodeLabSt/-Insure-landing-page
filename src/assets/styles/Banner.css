@@ -1,0 +1,151 @@
+.banner{
+    width: 100%;
+    background: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    color: #fff;
+    min-height: 600px;
+    padding: 0 200px;
+    position: relative;
+}
+
+.banner div{
+    width: 40%;
+    word-wrap: break-word;
+}
+
+.banner .contText h1{
+    font-size: 4em;
+    margin: 40px auto;
+}
+
+.banner .contText .divider{
+    border-bottom: 2px solid #fff;
+    max-width: 150px;
+    margin-bottom: 25px;
+}
+
+.banner .contText p{
+    font-size: 1.2em;
+}
+
+.banner .contText button{
+    padding: 12px 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 200ms ease-in;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.banner .contText button:hover{
+    background: #fff;
+    color: hsl(256, 26%, 20%);
+}
+
+.banner .contIntro{
+    position: relative;
+    height: 600px;
+}
+
+.banner .contIntro img{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+#img-bg-right{
+    position: absolute;
+    left: 82%;
+    max-height: 400px;
+    top: 0px;
+    z-index: 100;
+}
+
+#img-bg-left{
+    position: absolute;
+    left: 0;
+    top: 460px;
+    z-index: 100;
+}
+
+.banner .contText>img{
+    display: none;
+}
+
+@media(max-width: 1440px){
+    .banner{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner>img{
+        display: none;
+    }
+    
+    .banner div{
+        width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: auto;
+    }
+
+    .banner .contText{
+        position: relative;
+        padding: 100px;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner .contText .divider{
+        display: none;
+    }
+
+    .banner .contText img:nth-child(2){
+        position: absolute;
+        display: block;
+        top: 0;
+        min-width: 30%;
+        left: 0;
+    }
+
+    .banner .contText img:nth-child(3){
+        position: absolute;
+        display: block;
+        min-width: 20%;
+        top: 50%;
+        left: 80%;
+    }
+
+    .banner .contText h1,
+    .banner .contText p{
+        width: 100%;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .banner div:last-child{
+        height: auto;
+    }
+
+    .banner div:last-child img{
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+}
