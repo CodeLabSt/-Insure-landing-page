@@ -77,6 +77,10 @@ nav>div:last-child #bg-menu-movil{
 @media(max-width: 1440px){
     nav{
         position: fixed;
+        width: 100vw;
+    }
+    nav div:first-child{
+        width: 40%;
     }
     nav #hamburger-menu{
         display: block;

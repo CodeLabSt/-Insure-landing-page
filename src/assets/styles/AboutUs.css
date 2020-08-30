@@ -110,6 +110,12 @@
         align-items: center;
         text-align: center;
         width: 100%;
+        padding: 10px;
+    }
+
+    .about-us .title-cont{
+        margin-top: 100px;
+        font-size: 2.4em;
     }
 
     .about-us .divider{
@@ -123,10 +129,17 @@
     .about-us .card-container .card{
         align-items: center;
         margin-top: 70px;
+        width: 100%;
+        min-width: 250px;
+    }
+
+    .about-us .card-container .card p{
+        font-size: 1em;
     }
     
     .about-us .find-more h3{
         width: 100%;
+        font-size: 2em;
     }
 
     .about-us .find-more div{
