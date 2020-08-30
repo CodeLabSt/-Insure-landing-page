@@ -136,8 +136,9 @@
     .banner .contText img:nth-child(3){
         position: absolute;
         display: block;
-        top: 90%;
-        left: 65%;
+        width: 20%;
+        top: 80%;
+        left: 80%;
     }
 
     .banner .contText h1,
